@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    initialization-mode: never # do not call schema.sql (which would reset db)
+  jpa:
+    hibernate:
+      ddl-auto: none # Do not let hibernate automatically create or update DB schema
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml

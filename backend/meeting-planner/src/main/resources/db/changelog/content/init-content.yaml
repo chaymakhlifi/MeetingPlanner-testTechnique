@@ -1,0 +1,97 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-content
+      author: VirtualMagpie
+      changes:
+        # load content for table 'salle'
+        - loadData:
+            tableName: salle
+            columns:
+              - column:
+                  header: id
+                  name: id
+                  type: NUMERIC
+              - column:
+                  header: nom
+                  name: nom
+                  type: STRING
+              - column:
+                  header: capacite
+                  name: capacite
+                  type: NUMERIC
+            file: classpath:db/changelog/content/csv/salle.csv
+            separator: ;
+        # load content for table 'type_materiel'
+        - loadData:
+            tableName: type_materiel
+            columns:
+              - column:
+                  header: id
+                  name: id
+                  type: NUMERIC
+              - column:
+                  header: nom
+                  name: nom
+                  type: STRING
+            file: classpath:db/changelog/content/csv/type_materiel.csv
+            separator: ;
+        # load content for table 'materiel_fixe'
+        - loadData:
+            tableName: materiel_fixe
+            columns:
+              - column:
+                  header: id
+                  name: id
+                  type: NUMERIC
+              - column:
+                  header: id_salle
+                  name: id_salle
+                  type: NUMERIC
+              - column:
+                  header: id_type_materiel
+                  name: id_type_materiel
+                  type: NUMERIC
+            file: classpath:db/changelog/content/csv/materiel_fixe.csv
+            separator: ;
+        # load content for table 'materiel_mobile'
+        - loadData:
+            tableName: materiel_mobile
+            columns:
+              - column:
+                  header: id
+                  name: id
+                  type: NUMERIC
+              - column:
+                  header: id_type_materiel
+                  name: id_type_materiel
+                  type: NUMERIC
+            file: classpath:db/changelog/content/csv/materiel_mobile.csv
+            separator: ;
+        # load content for table 'type_reunion'
+        - loadData:
+            tableName: type_reunion
+            columns:
+              - column:
+                  header: id
+                  name: id
+                  type: NUMERIC
+              - column:
+                  header: nom
+                  name: nom
+                  type: STRING
+            file: classpath:db/changelog/content/csv/type_reunion.csv
+            separator: ;
+        # load content for table 'type_reunion_materiel_requis'
+        - loadData:
+            tableName: type_reunion_materiel_requis
+            columns:
+              - column:
+                  header: id_type_reunion
+                  name: id_type_reunion
+                  type: NUMERIC
+              - column:
+                  header: id_type_materiel
+                  name: id_type_materiel
+                  type: NUMERIC
+            file: classpath:db/changelog/content/csv/type_reunion_materiel_requis.csv
+            separator: ;

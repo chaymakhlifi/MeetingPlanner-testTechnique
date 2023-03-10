@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-table-reservation-materiel
+      author: VirtualMagpie
+      changes:
+        - createTable:
+            tableName: reservation_materiel
+            columns:
+              # Jointure sur la table des matériels mobiles
+              - column:
+                  name: id_materiel_mobile
+                  type: int
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: materiel_mobile
+              # Jointure sur la table des réservations
+              - column:
+                  name: id_reservation
+                  type: int
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: reservation

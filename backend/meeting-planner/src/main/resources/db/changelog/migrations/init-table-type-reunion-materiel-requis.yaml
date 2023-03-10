@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-table-type-reunion-materiel-requis
+      author: VirtualMagpie
+      changes:
+        - createTable:
+            tableName: type_reunion_materiel_requis
+            columns:
+              # Jointure sur la table des types de matériel
+              - column:
+                  name: id_type_materiel
+                  type: int
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: type_materiel
+              # Jointure sur la table des types de réunion
+              - column:
+                  name: id_type_reunion
+                  type: int
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: type_reunion

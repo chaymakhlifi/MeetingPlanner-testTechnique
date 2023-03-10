@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-salle.yaml
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-type-materiel.yaml
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-type-reunion.yaml
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-materiel-fixe.yaml
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-materiel-mobile.yaml
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-type-reunion-materiel-requis.yaml
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-reservation.yaml
+  - include:
+      - file: classpath:db/changelog/migrations/init-table-reservation-materiel.yaml

@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-table-salle
+      author: VirtualMagpie
+      changes:
+        - createTable:
+            tableName: salle
+            columns:
+              # ID
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              # Nom d'affichage de la salle
+              - column:
+                  name: nom
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              # Nombre de places nominal de la salle
+              - column:
+                  name: capacite
+                  type: int
+                  constraints:
+                    nullable: false

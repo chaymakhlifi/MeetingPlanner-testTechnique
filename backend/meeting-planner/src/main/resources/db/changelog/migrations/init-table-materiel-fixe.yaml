@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-table-materiel-fixe
+      author: VirtualMagpie
+      changes:
+        - createTable:
+            tableName: materiel_fixe
+            columns:
+              # ID
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              # Jointure sur la table des types de matériel
+              - column:
+                  name: id_type_materiel
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: type_materiel
+              # Jointure sur la table des salles
+              - column:
+                  name: id_salle
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: salle

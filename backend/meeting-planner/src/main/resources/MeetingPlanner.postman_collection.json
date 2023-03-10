@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "32fc9440-1383-4bd7-8360-f125195bb449",
+		"name": "MeetingPlanner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lundi matin",
+			"item": [
+				{
+					"name": "Reunion 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 8,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 6,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 4,\r\n    \"nombrePersonne\": 4,\r\n    \"debut\": \"2021-05-03T11:00:00Z\",\r\n    \"fin\": \"2021-05-03T12:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 3,\r\n    \"nombrePersonne\": 2,\r\n    \"debut\": \"2021-05-03T11:00:00Z\",\r\n    \"fin\": \"2021-05-03T12:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 2,\r\n    \"nombrePersonne\": 9,\r\n    \"debut\": \"2021-05-03T11:00:00Z\",\r\n    \"fin\": \"2021-05-03T12:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 4,\r\n    \"nombrePersonne\": 7,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 9,\r\n    \"debut\": \"2021-05-03T08:00:00Z\",\r\n    \"fin\": \"2021-05-03T09:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 2,\r\n    \"nombrePersonne\": 10,\r\n    \"debut\": \"2021-05-03T08:00:00Z\",\r\n    \"fin\": \"2021-05-03T09:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 2,\r\n    \"nombrePersonne\": 5,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 3,\r\n    \"nombrePersonne\": 4,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 4,\r\n    \"nombrePersonne\": 8,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 12",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 12,\r\n    \"debut\": \"2021-05-03T11:00:00Z\",\r\n    \"fin\": \"2021-05-03T12:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 13",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 2,\r\n    \"nombrePersonne\": 5,\r\n    \"debut\": \"2021-05-03T11:00:00Z\",\r\n    \"fin\": \"2021-05-03T12:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 14",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 3,\r\n    \"debut\": \"2021-05-03T08:00:00Z\",\r\n    \"fin\": \"2021-05-03T09:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 15",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 2,\r\n    \"nombrePersonne\": 2,\r\n    \"debut\": \"2021-05-03T08:00:00Z\",\r\n    \"fin\": \"2021-05-03T09:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 16",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 12,\r\n    \"debut\": \"2021-05-03T08:00:00Z\",\r\n    \"fin\": \"2021-05-03T09:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 17",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 6,\r\n    \"debut\": \"2021-05-03T10:00:00Z\",\r\n    \"fin\": \"2021-05-03T11:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 18",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 3,\r\n    \"nombrePersonne\": 2,\r\n    \"debut\": \"2021-05-03T11:00:00Z\",\r\n    \"fin\": \"2021-05-03T12:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 19",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 3,\r\n    \"nombrePersonne\": 4,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reunion 20",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTypeReunion\": 4,\r\n    \"nombrePersonne\": 7,\r\n    \"debut\": \"2021-05-03T09:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reservation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Reservation List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/reservation/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Reservation Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idTypeReunion\": 1,\r\n    \"nombrePersonne\": 10,\r\n    \"debut\": \"2021-05-03T07:00:00Z\",\r\n    \"fin\": \"2021-05-03T10:00:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

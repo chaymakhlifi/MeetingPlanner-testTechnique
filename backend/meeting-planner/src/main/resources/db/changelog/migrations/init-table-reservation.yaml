@@ -1,0 +1,52 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-table-reservation
+      author: VirtualMagpie
+      changes:
+        - createTable:
+            tableName: reservation
+            columns:
+              # ID
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              # Identifiant fourni par l'id provider pour identifier l'utilisateur ayant créé la réservation
+              - column:
+                  name: id_reservateur
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              # Jointure sur la table des salles
+              - column:
+                  name: id_salle
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: salle
+              # Jointure sur la table des types de réunion
+              - column:
+                  name: id_type_reunion
+                  type: int
+                  constraints:
+                    nullable: false
+                    foreignKey:
+                      referencedColumnNames: id
+                      referencedTableName: type_reunion
+              # Datetime début de la réunion
+              - column:
+                  name: datetime_debut
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              # Datetime fin de la réunion
+              - column:
+                  name: datetime_fin
+                  type: timestamp
+                  constraints:
+                    nullable: false

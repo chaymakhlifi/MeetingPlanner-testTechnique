@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-table-type-materiel
+      author: VirtualMagpie
+      changes:
+        - createTable:
+            tableName: type_materiel
+            columns:
+              # ID
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              # Nom d'affichage du matériel
+              - column:
+                  name: nom
+                  type: varchar(50)
+                  constraints:
+                    nullable: false

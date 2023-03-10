@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    initialization-mode: always
+
+meetingplanner:
+  restrictions:
+    minuteLibreAvant: 60
+    ratioCapacite: 0.7

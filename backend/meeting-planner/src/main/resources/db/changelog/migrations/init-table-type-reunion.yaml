@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-table-type-reunion
+      author: VirtualMagpie
+      changes:
+        - createTable:
+            tableName: type_reunion
+            columns:
+              # ID
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              # Nom d'affichage du type de réunion
+              - column:
+                  name: nom
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
